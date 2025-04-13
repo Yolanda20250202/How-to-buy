@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LuvCoin怎么买（LUV） | 官方购买指南</title>
+<meta name="description" content="了解如何购买 LuvCoin（LUV），支持 Solana、银行卡、Binance 与 OKEx 等多种方式。适合初学者的中文购买教程。">
+<meta name="keywords" content="LuvCoin, 怎么买LuvCoin, 数字货币教程, 加密货币购买指南, Solana代币, 中文币圈指南">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js">
+  // Scroll-based animation for cards
+  const cards = document.querySelectorAll('.card');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('visible');
+    });
+  }, { threshold: 0.3 });
+  cards.forEach(card => observer.observe(card));
+});
+</script>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #ffe6f0, #e0f7ff, #fff6e6);
+      color: #333;
+      overflow-x: hidden;
+    }
+    header, footer {
+      background: #fdf2f8;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    header nav a, footer nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+    }
+    .hero {
+      background: linear-gradient(to right, #ffccf9, #d5f4ff, #fff1cc);
+      padding: 60px 20px;
+      text-align: center;
+      position: relative;
+    }
+    .hero h1 {
+      font-size: 2.5em;
+      margin-bottom: 0.5em;
+    }
+    .hero p {
+      font-size: 1.2em;
+    }
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .card {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(255, 102, 178, 0.3);
+      padding: 25px;
+      flex: 1 1 260px;
+      min-width: 260px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px) scale(1.02);
+      box-shadow: 0 0 15px rgba(255, 102, 178, 0.6);
+    }
+    .cta-buttons a {
+      display: inline-block;
+      padding: 12px 24px;
+      background: linear-gradient(to right, #ff66b2, #ff3399);
+      color: white;
+      border-radius: 30px;
+      margin: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: transform 0.2s ease;
+    }
+    .cta-buttons a:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      background: #111;
+      color: #fff;
+      font-size: 0.9em;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 30px 20px;
+    }
+    @media (max-width: 768px) {
+      header, footer {
+        flex-direction: column;
+        text-align: center;
+      }
+      .grid {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    .card img {
+      height: 48px;
+      margin-bottom: 10px;
+    }
+  
+  .luvbot {
+    width: 120px;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+  }
+  .luvbot:hover {
+    transform: scale(1.1) rotate(-5deg);
+    animation: wink 1s ease-in-out;
+  }
+  @keyframes wink {
+    0%, 100% { filter: none; }
+    50% { filter: brightness(1.3) saturate(1.8); }
+  }
+  .bounce-on-click:active {
+    transform: scale(0.9);
+  }
+  .card {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.6s ease;
+  }
+  .card.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+</head>
+<body>
+<div style="position:absolute; top:15px; right:20px;"><a href="how_to_buy_luvcoin_final.html">EN</a></div>
+
+<header>
+  <div><strong style="color:#ff3399;">LUVCOIN</strong></div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Mission</a>
+    <a href="#">Tokenomics</a>
+    <a href="#">Join</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+<section class="hero animate__animated animate__fadeInDown">
+  <img src="assets/luvbot-banner.png" alt="LuvBot Mascot" class="luvbot" />
+  <h1>LuvCoin 怎么买（LUV）</h1>
+  <p>选择您喜欢的方式，轻松加入 LuvCoin 爱的链上革命！</p>
+</section>
+
+<section class="section">
+  <div class="grid" id="cardGrid">
+    <div class="card animate__animated animate__zoomIn">
+      <img src="https://cryptologos.cc/logos/solana-sol-logo.svg" alt="Solana" />
+      <h3>通过 Solana 购买</h3>
+      <p>使用您的 Solana 钱包直接通过 DApp 购买 LUV 代币。</p>
+      <code id="solana-address">[LUV_SOL_CONTRACT_ADDRESS]</code><br/>
+      
+    <button class="cta-buttons" onclick="copyAddressWithHearts()">Copy Address</button>
+    <div id="heart-burst" style="position: absolute; display: none; font-size: 24px;">❤️❤️❤️</div>
+    
+    </div>
+    <div class="card animate__animated animate__zoomIn animate__delay-1s">
+      <img src="https://img.icons8.com/color/48/bank-cards.png" alt="Debit Card" />
+      <h3>使用银行卡购买</h3>
+      <p>使用银行卡快速购买 LuvCoin。</p>
+      <a href="#" class="cta-buttons bounce-on-click">Buy Now</a>
+    </div>
+    <div class="card animate__animated animate__zoomIn animate__delay-2s">
+      <img src="https://cryptologos.cc/logos/binance-coin-bnb-logo.svg" alt="Binance" />
+      <h3>在 Binance 交易</h3>
+      <p>在 Binance 上买入、卖出或交易 LuvCoin。</p>
+    </div>
+    <div class="card animate__animated animate__zoomIn animate__delay-3s">
+      <img src="https://cryptologos.cc/logos/okb-okb-logo.svg" alt="OKEx" />
+      <h3>在 OKEx 交易</h3>
+      <p>在 OKEx 安全交易 LuvCoin。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <p><strong>准备好释放爱了吗？</strong></p>
+  <div class="cta-buttons">
+    <a href="#">通过 Solana 购买</a>
+    <a href="#">Buy with Debit Card</a>
+    <a href="#">在 Binance 交易</a>
+    <a href="#">在 OKEx 交易</a>
+  </div>
+</section>
+
+<footer>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Mission</a>
+    <a href="#">Contact</a>
+  </nav>
+  <p>© 2025 LuvCoin. 爱在链上，连接全球 82 亿颗心。</p>
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  function copyAddress() {
+    const address = document.getElementById("solana-address").innerText;
+    navigator.clipboard.writeText(address).then(() => {
+      alert("Contract address copied to clipboard!");
+    });
+  }
+
+  // Scroll-based animation for cards
+  const cards = document.querySelectorAll('.card');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('visible');
+    });
+  }, { threshold: 0.3 });
+  cards.forEach(card => observer.observe(card));
+});
+</script>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  function copyAddressWithHearts() {
+    const address = document.getElementById("solana-address").innerText;
+    navigator.clipboard.writeText(address).then(() => {
+      const heart = document.getElementById("heart-burst");
+      heart.style.display = "block";
+      heart.style.left = '50%';
+      heart.style.top = '50%';
+      heart.style.position = 'fixed';
+      heart.style.animation = 'fly 1s ease-out forwards';
+      setTimeout(() => { heart.style.display = "none"; heart.style.animation = ""; }, 1000);
+    });
+  }
+
+  // Scroll-based animation for cards
+  const cards = document.querySelectorAll('.card');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('visible');
+    });
+  }, { threshold: 0.3 });
+  cards.forEach(card => observer.observe(card));
+});
+</script>
+<style>
+  @keyframes fly {
+    0% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translate(-50%, -150%) scale(1.5);
+      opacity: 0;
+    }
+  }
+
+  .luvbot {
+    width: 120px;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+  }
+  .luvbot:hover {
+    transform: scale(1.1) rotate(-5deg);
+    animation: wink 1s ease-in-out;
+  }
+  @keyframes wink {
+    0%, 100% { filter: none; }
+    50% { filter: brightness(1.3) saturate(1.8); }
+  }
+  .bounce-on-click:active {
+    transform: scale(0.9);
+  }
+  .card {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.6s ease;
+  }
+  .card.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+</body>
+</html>
